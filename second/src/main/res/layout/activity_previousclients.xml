@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f253f"
+    tools:context=".previousclients">
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:textStyle="bold"
+        android:text="Previous Clients"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="@drawable/custom_buttons"
+        android:drawableLeft="@drawable/maleicon"
+        android:text="client name here"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+    <Button
+        android:id="@+id/button32"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:background="@drawable/custom_buttons"
+        android:drawableLeft="@drawable/femaleicon"
+        android:text="client name here"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.378" />
+</androidx.constraintlayout.widget.ConstraintLayout>

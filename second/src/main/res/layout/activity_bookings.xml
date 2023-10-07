@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f253f"
+    tools:context=".Bookings">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Bookings"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/bookingbutton1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:textColor="@color/black"
+        android:text="View Current Bookings"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.215" />
+
+    <Button
+        android:id="@+id/bookingbutton2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:textColor="@color/black"
+        android:text="Schedule Appointment"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303" />
+
+    <Button
+        android:id="@+id/bookingbutton4"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:textColor="@color/black"
+        android:text="Consultee Search"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475" />
+
+    <Button
+        android:id="@+id/bookingbutton3"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        android:text="Manage Bookings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.389"
+        tools:ignore="DuplicateIds" />
+
+    <Button
+        android:id="@+id/bookingbutton5"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:textColor="@color/black"
+        android:text="View Previous Bookings"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <Button
+        android:id="@+id/bookingbutton6"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button2"
+        android:textColor="@color/black"
+        android:text="Change Hours Available"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.647" />
+</androidx.constraintlayout.widget.ConstraintLayout>
