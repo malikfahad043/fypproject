@@ -1,7 +1,9 @@
 package com.example.consultant;
-
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -26,7 +28,32 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        uname = findViewById(R.id.uname);
+        TextInputLayout passwordTextInputLayout = findViewById(R.id.passwordTextInputLayout);
+        TextInputEditText passEditText = findViewById(R.id.pass);
+
+        passEditText.setOnFocusChangeListener((v, hasFocus) -> {
+            if (hasFocus) {
+                passwordTextInputLayout.setHint("");
+            } else {
+                passwordTextInputLayout.setHint("Password");
+            }
+        });
+        passwordTextInputLayout.setEndIconOnClickListener(v -> {
+            // Toggle password visibility
+            int inputType = passEditText.getInputType();
+            if (inputType == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
+                passEditText.setInputType(
+                        InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+            } else {
+                passEditText.setInputType(
+                        InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+            }
+            passEditText.setSelection(passEditText.getText().length());
+        });
+
+
+
+    uname = findViewById(R.id.uname);
         pass = findViewById(R.id.pass);
         login = findViewById(R.id.login);
         regbtn=findViewById(R.id.regbtn);

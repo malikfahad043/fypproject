@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#0f253f"
     tools:context=".MainActivity">
 
@@ -62,43 +62,55 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         />
-    <EditText
-        android:id="@+id/u_pass"
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayoutR"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:hint="Password"
-        android:background="@drawable/customedit"
-        android:padding="12dp"
-        android:drawableStart="@drawable/baseline_lock_24"
-        android:drawablePadding="12dp"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:ems="10"
-        android:inputType="textPassword"
-        />
-    <EditText
-        android:id="@+id/u_cpass"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:hint="Confirm Password"
-        android:background="@drawable/customedit"
-        android:padding="12dp"
-        android:drawableStart="@drawable/baseline_lock_24"
-        android:drawablePadding="12dp"
         android:textColorHint="@color/white"
-        android:textColor="@color/white"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/u_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/customedit"
+            android:padding="12dp"
+            android:textColorHint="@color/white"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="12dp"
+            android:textColor="@color/white"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayoutRc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="310dp"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:ems="10"
-        android:inputType="textPassword"
-        />
-
+        android:textColorHint="@color/white"
+        app:endIconMode="password_toggle"
+        tools:ignore="DuplicateIds">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/u_cpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/customedit"
+            android:padding="12dp"
+            android:textColorHint="@color/white"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="12dp"
+            android:textColor="@color/white"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/reg"

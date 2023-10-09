@@ -3,11 +3,14 @@ package com.example.consultant;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.InputType;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class registration_page extends AppCompatActivity {
@@ -26,6 +29,30 @@ public class registration_page extends AppCompatActivity {
         reg = findViewById(R.id.reg);
         radioGroup = findViewById(R.id.radio_group_gender);
         auth = FirebaseAuth.getInstance();
+        TextInputLayout passwordTextInputLayout = findViewById(R.id.passwordTextInputLayoutR);
+        TextInputEditText passEditText = findViewById(R.id.u_pass);
+
+
+        passEditText.setOnFocusChangeListener((v, hasFocus) -> {
+            if (hasFocus) {
+                passwordTextInputLayout.setHint("");
+            } else {
+                passwordTextInputLayout.setHint("Password");
+            }
+        });
+
+        passwordTextInputLayout.setEndIconOnClickListener(v -> {
+            // Toggle password visibility
+            int inputType = passEditText.getInputType();
+            if (inputType == InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD) {
+                passEditText.setInputType(
+                        InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PASSWORD);
+            } else {
+                passEditText.setInputType(
+                        InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD);
+            }
+            passEditText.setSelection(passEditText.getText().length());
+        });
 
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

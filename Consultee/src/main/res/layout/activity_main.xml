@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Consultant"
+        android:text="Consultee"
         android:textColor="#e4e8ea"
         android:textStyle="bold"
         android:textSize="40dp"
@@ -56,23 +56,47 @@
 
         />
 
-    <EditText
-        android:id="@+id/pass"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordTextInputLayout"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:hint="Password"
-        android:background="@drawable/customedit"
-        android:padding="12dp"
-        android:drawableStart="@drawable/baseline_lock_24"
-        android:drawablePadding="12dp"
-        android:textColorHint="@color/white"
-        android:textColor="@color/white"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="410dp"
-        android:textSize="20sp"
-        android:ems="10"
-        android:inputType="textPassword"
-        />
+        android:textColorHint="@color/white"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@drawable/customedit"
+            android:padding="12dp"
+            android:textColorHint="@color/white"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="12dp"
+            android:textColor="@color/white"
+            android:inputType="textPassword"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--    <EditText-->
+<!--        android:id="@+id/pass"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:hint="Password"-->
+<!--        android:background="@drawable/customedit"-->
+<!--        android:padding="12dp"-->
+<!--        android:drawableStart="@drawable/baseline_lock_24"-->
+<!--        android:drawablePadding="12dp"-->
+<!--        android:textColorHint="@color/white"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="410dp"-->
+<!--        android:textSize="20sp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPassword"-->
+<!--        />-->
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/login"
