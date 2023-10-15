@@ -40,7 +40,7 @@ public class myfirstpage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(myfirstpage.this, com.example.consultant.MainActivity.class);
+                Intent intent = new Intent(myfirstpage.this, MainActivity.class);
                 startActivity(intent);
 
 //                return false;

@@ -57,7 +57,6 @@ public class drawer_DB extends AppCompatActivity {
         nav_view.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener()
         {
 
-
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item)
             {

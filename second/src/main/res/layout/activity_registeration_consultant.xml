@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0f253f"
-    tools:context=".MainActivity">
+    tools:context=".registeration_consultant">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Create an Account"
+        android:text="Create an Account Fahad"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
         android:textColor="#e4e8ea"

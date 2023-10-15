@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#0f253f"
-    tools:context=".MainActivity">
+    tools:context=".registration_page">
 
     <TextView
         android:layout_width="wrap_content"

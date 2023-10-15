@@ -8,6 +8,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true">
         <activity
+            android:name=".drawer_consultant"
+            android:exported="false" />
+        <activity
             android:name=".registeration_consultant"
             android:exported="false" />
         <activity
@@ -62,7 +65,7 @@
             android:name=".EditProfileUI"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".dashboard_consult"
             android:exported="true" />
     </application>
 

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Consultant"
         tools:targetApi="31">
         <activity
+            android:name=".card1"
+            android:exported="false" />
+        <activity
             android:name=".myfirstpage"
             android:exported="false" />
         <activity
@@ -55,9 +58,6 @@
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".consultant" -->
         <!-- android:exported="false" /> -->
-        <activity
-            android:name=".card"
-            android:label="Card 1 Activity" />
         <activity
             android:name=".help"
             android:exported="false" />
