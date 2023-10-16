@@ -25,9 +25,6 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class drawer_DB extends AppCompatActivity {
     private EditText editTextId;
     private DrawerLayout drawerlayout;
